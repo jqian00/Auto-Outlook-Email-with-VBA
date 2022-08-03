@@ -1,0 +1,48 @@
+Public Tref As String
+Public Nme As String
+Public Add As String
+Public Mobile As String
+Public al As String
+Public Pid As String
+Public K As String
+Public wc As Range
+Public i As Integer
+
+
+
+Sub SendMail()
+
+Dim outApp As Object
+Dim outMail As Object
+
+Dim srs As String
+
+Application.ScreenUpdating = False
+Set outApp = CreateObject("Outlook.Application")
+j = Sheet1.Range("a65556").End(xlUp).Row
+Set wc = Sheet1.Range("A1:F" & j)
+     
+For i = j To 2 Step -1
+    srs = wc(i, 1).Value
+    If wc(i, "H").Value <> "Sent" Then 'use Column G to check
+        Set outMail = outApp.createItem(0) 'need to find out
+        With outMail
+        .To = "telestar@worldcourier.com.au"
+        .CC = "queensland.health@telestar.com.au;kalpana.banga@telestar.com.au;karen.chen@telestar.com.au;dispatch@telestar.com.au;Lena.li@telestar.com.au;miley.zheng@telestar.com.au"
+        .Subject = "Telestar Pickup SRS-" & srs
+         
+         
+         Call Htmlcontent.htmlbody
+        .htmlbody = olhtmlbody2 & olhtmlbody1 & olhtmlbody3
+        
+        .send
+        End With
+        wc(i, "H") = "Sent"
+        Set outMail = Nothing
+    End If
+Next
+Application.ScreenUpdating = True
+
+  
+End Sub
+
