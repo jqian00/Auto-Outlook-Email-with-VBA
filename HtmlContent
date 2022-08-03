@@ -1,0 +1,66 @@
+Public olhtmlbody1 As String
+Public olhtmlbody2 As String
+Public olhtmlbody3 As String
+
+
+
+Option Explicit
+
+Sub htmlbody()
+
+olhtmlbody2 = "<body lang=""EN-AU"" link=""#0563C1"" vlink=""#954F72"" style=""word-wrap:break-word"">" & _
+"<div class=""WordSection1"">" & _
+"<p class=""MsoNormal"">Hi Team,<o:p></o:p></p>" & _
+"<p class=""MsoNormal"">Could you please organize <span lang=""EN-US"">the below</span> pickup job(s) for Telestar?<o:p></o:p></p>"
+
+
+Tref = wc(i, 1).Value
+Nme = wc(i, 2).Value
+Add = wc(i, 3).Value
+Mobile = wc(i, 4).Value
+al = wc(i, 5).Value
+Pid = wc(i, 6).Value
+K = wc(i, 7).Value
+
+
+olhtmlbody1 = "<table class=""MsoNormalTable"" border=""0"" cellspacing=""0"" cellpadding=""0"" title="""" summary="""" style=""border-collapse:collapse""><tbody><tr><td width=""135"" valign=""top"" style=""width:101.45pt;border:solid #A3A3A3 1.0pt;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b>Telestar Reference</b><o:p></o:p></p></td><td width=""124"" valign=""top"" style=""width:92.75pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Pickup Attention</span></b><o:p></o:p></p></td><td width=""288"" valign=""top"" style=""width:215.85pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Pickup Address</span></b><o:p></o:p></p></td><td width=""112"" valign=""top"" style=""width:83.95pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Pickup Contact</span></b><o:p></o:p></p></td><td width=""138"" valign=""top"" style=""width:103.7pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Alternative Contact</span></b><o:p></o:p></p></td><td width=""100"" valign=""top"" style=""width:74.95pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Patient ID</span></b><o:p></o:p></p></td><td width=""83"" valign=""top"" style=""width:62.35pt;border:solid #A3A3A3 1.0pt;border-left:none;background:#D9D9D9;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b><span style=""color:black"">Kit Number</span></b><o:p></o:p></p></td></tr><tr><td width=""135"" valign=""top"" style=""width:101.45pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & Tref & "<o:p></o:p></p></td><td width=""124"" valign=""top"" style=""width:92.75pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & Nme & "<o:p></o:p></p></td><td width=""288"" valign=""top"" style=""width:215.85pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & Add & "<o:p></o:p></p></td><td width=""112"" valign=""top"" style=""width:83.95pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & Mobile & "<o:p></o:p></p></td><td width=""138"" valign=""top"" style=""width:103.7pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & al & "<o:p></o:p></p></td><td width=""100"" valign=""top"" style=""width:74.95pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & Pid & "<o:p></o:p></p></td><td width=""83"" valign=""top"" style=""width:62.35pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">" & K & "<o:p></o:p></p></td></tr></tbody></table>"
+
+
+
+olhtmlbody3 = "</table><p class=""MsoNormal""><span style=""color:white"">&nbsp;</span><o:p></o:p></p>" & _
+"<p class=""MsoNormal"">Could you please deliver the kit(s) to our office as below:<o:p></o:p></p><table class=""MsoNormalTable"" border=""0"" cellspacing=""0"" cellpadding=""0"" title="""" summary="""" style=""border-collapse:collapse"">" & _
+"<tbody><tr><td width=""134"" valign=""top"" style=""width:100.2pt;border:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">Delivery Attention <o:p></o:p></p></td><td width=""307"" valign=""top"" style=""width:230.45pt;border:solid #A3A3A3 1.0pt;border-left:none;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b>Telestar Communications</b><o:p></o:p></p></td></tr><tr><td width=""132"" valign=""top"" style=""width:98.8pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">Delivery Contact <o:p></o:p></p></td><td width=""309"" valign=""top"" style=""width:231.85pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b>1300 435 055</b><o:p></o:p></p></td></tr><tr><td width=""132"" valign=""top"" style=""width:98.8pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">Delivery Email <o:p></o:p></p></td><td width=""309"" valign=""top"" style=""width:231.85pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><a href=""mailto:Queensland.health@telestar.com.au"">Queensland.health@telestar.com.au</a><o:p></o:p></p></td></tr><tr><td width=""132"" valign=""top"" style=""width:98.8pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal"">Delivery Address <o:p></o:p></p></td><td width=""316"" valign=""top"" style=""width:236.9pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt"">" & _
+"<p class=""MsoNormal""><b>Level 6, 117 York St, Sydney, NSW 2000, Australia</b><o:p></o:p></p></td></tr></tbody></table>" & _
+"<p class=""MsoNormal"">Kind regards,<o:p></o:p></p><table class=""MsoNormalTable"" border=""0"" cellspacing=""0"" cellpadding=""0"" width=""640"" style=""width:480.0pt;border-collapse:collapse""><tbody><tr><td width=""260"" valign=""top"" style=""width:195.0pt;padding:0cm 0cm 0cm 0cm"">" & _
+"<p class=""MsoNormal""><b><span style=""font-size:15.0pt;color:#58BCD9"">Jayden Qian<br>" & _
+"</span></b><b><span style=""font-size:13.5pt;color:#2B3E92"">Service Delivery Specialist</span></b><b><span style=""font-size:13.5pt;color:#2B3E92""><o:p></o:p></span></b></p>" & _
+"<p class=""MsoNormal""><span style=""font-size:12.0pt;color:#2B3E92"">02 9317 0052<o:p></o:p></span></p></td><td width=""190"" valign=""top"" style=""width:142.5pt;padding:0cm 0cm 0cm 0cm"">" & _
+"<p class=""MsoNormal""><span style=""font-size:12.0pt;color:#2B3E92"">Level 6, 117 York St<br>Sydney, NSW 2000<br>Australia<br>1300 658 687<o:p></o:p></span></p></td><td width=""190"" valign=""top"" style=""width:142.5pt;padding:0cm 0cm 0cm 0cm"">" & _
+"<p class=""MsoNormal"" align=""center"" style=""text-align:center""><span style=""font-size:10.5pt;font-family:DarwinAlt;color:#333333"">&nbsp;<o:p></o:p></span></p></td></tr><tr><td valign=""top"" style=""padding:0cm 0cm 0cm 0cm"">" & _
+"<p class=""MsoNormal""><span style=""font-size:12.0pt;color:#2B3E92""><a href=""mailto:jayden.qian@telestar.com.au"" title=""Click to Email""><span style=""color:#2EABE3"">jayden.qian@telestar.com.au</span></a></span><span style=""font-size:12.0pt;color:#2B3E92""><o:p></o:p></span></p></td><td valign=""top"" style=""padding:0cm 0cm 0cm 0cm"">" & _
+"<p class=""MsoNormal""><span style=""font-size:12.0pt;color:#2B3E92""><a href=""http://www.telestar.com.au/"" target=""_blank"" title=""Telestar Communications""><span style=""color:#2EABE3"">telestar.com.au</span></a><o:p></o:p></span></p></td><td style=""padding:0cm 0cm 0cm 0cm""></td></tr></tbody></table>"
+
+
+End Sub
+
